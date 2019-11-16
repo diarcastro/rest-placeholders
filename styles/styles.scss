@@ -1,0 +1,82 @@
+html, body {
+    font-size: 14px;
+}
+
+// http://jsfiddle.net/KJQ9K/554/
+.string { color: green; }
+.number { color: darkorange; }
+.boolean { color: blue; }
+.null { color: magenta; }
+.key { color: red; }
+
+.loading__text {
+    display: block;
+}
+
+.userData {
+    position: relative;
+    display: none;
+
+    &__head {
+        &-avatar,
+        &-fullName,
+        &-email,
+        &-username {
+            text-align: center;
+            margin: 5px auto;
+        }
+
+        &-avatar img {
+            border-radius: 50%;
+            min-width: 128px;
+            min-height: 128px;
+            box-shadow: #000 0px 10px 8px -6px
+        }
+
+        &-fullName {
+            font-weight: bold;
+        }
+
+        &-username {
+            font-size: .8rem;
+        }
+    }
+
+    &__json {
+        background-color: #f8f9fa;
+        max-width: 400px;
+        min-width: 400px;
+        max-height: 300px;
+        font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+        font-size: 1rem;
+        padding: 10px;
+        overflow: auto;
+        border: 1px solid #DDD;
+    }
+}
+
+body.loaded {
+    .loading__text {
+        display: none;
+    }
+
+    .userData {
+        display: block;
+    }
+}
+
+.actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    > button {
+        border-radius: 4px;
+        padding: 5px 7px;
+    }
+
+    &__refreshUser {
+        margin-right: 5px;
+    }
+}
+

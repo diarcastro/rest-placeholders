@@ -1,0 +1,27 @@
+{
+  "name": "Rest Placeholders",
+  "version": "1.0",
+  "description": "This an extension!",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/rp-icon16.png",
+      "32": "images/rp-icon32.png",
+      "48": "images/rp-icon48.png",
+      "128": "images/rp-icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/rp-icon16.png",
+    "32": "images/rp-icon32.png",
+    "48": "images/rp-icon48.png",
+    "128": "images/rp-icon128.png"
+  },
+  "manifest_version": 2
+}
